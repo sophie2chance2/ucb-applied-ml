@@ -11,3 +11,4 @@
 | Generalization | Capability to learn from some examples in a way that transfers to new examples | [[Module 1 - Course Overview#Generalization]] |
 | Ocram's Razor | All things being equal, the simpler explanation is better | [[Module 1 - Course Overview#Generalization]] |
 | Overfitting | The model has learned to fit the training model too well, at the expense of generalization | [[Module 1 - Course Overview#Generalization]] |
+| Calibration | Adjusting a model's output to ensure its predicted probabilities accurately reflect the true likelihood of an event or outcome | [[Module 1 - Course Overview#Example 1 Lung Cancer Screening]] |

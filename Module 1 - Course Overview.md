@@ -133,6 +133,13 @@
 	* How will your function be used?
 	* What is a baseline predictor?
 		* Important for collaborating the model. Is this model preforming well? What is the comparison?
+**Questions:**
+- What are the inputs and outputs?
+- What is the labeled data?
+* Considerations for train/test split?
+* How will your function be used?
+* How will you evaluate predictions?
+* What is a baseline predictor?
 
 ### Example 1: Lung Cancer Screening
 * Diagnostic screening has gotten even better than human screening
@@ -144,3 +151,89 @@
 			* Output will probably be the most useful when used in conjunction with an expert
 	* What is the labeled data?
 		* Scans annotated by human experts
+			* We can't say with 100% certainty yes/no, but we can use expertly annotated scans, but they could disagree
+				* Have many annotations of one scan to see if they agree
+					* May add a rule that says must have ___ agreement in order to use the scan
+			* With multiple annotators, you must have agreement
+	* Considerations for train/test split
+		* No patient with scans in both train and test
+			* If there are some patients with multiple scans, need to split on PATIENTS not scans
+	* How will your function be used?
+		* By doctors
+		* By patients
+			* Don't want to alarm them
+		* By insurance companies
+			* How will the info be used for/against patients
+		* Does training population match usage population?
+			* Are the predictions relevant when applied to users?
+				* ie. if you train in North America and apply in Asia
+	* How will you evaluate predictions?
+		* Classification accuracy
+			* Correct/total
+		* Mistakes have 2 types
+			* False positives
+				* Model says "yes, cancer" - scary for patients
+			* False negatives
+				* Model says "no cancer" - dangerous for patients
+			* Might weigh these mistakes differently based on the end users
+		* Calibration
+			* What does a prediction of .9 mean? -> 90% confidence that it is cancer
+			* Actual likelihood v predicted 
+	* What is a baseline predictor?
+		* Always predict "no cancer" because the general person with a lung scan will no have cancer
+		* If 1000 scans, 900 no cancer, 100 cancer, default of "no cancer" gives 90% accuracy - in that case 91% in the model needs to be calibrated
+### Example 2: Sports Outcomes
+
+- What are the inputs and outputs?
+	- Inputs: Team1 and Team2
+	* Outputs: win/loss (Did team 1 win?)
+	* Outputs: point difference (T1points - T2points)
+- What is the labeled data?
+	- Previous games and the results (from the current season)
+* Considerations for train/test split?
+	* Use past games to predict future results (rolling predictions)
+	* Need it to be predicting future uses
+	* On day 30 of season, make training set of 25 days, then use the last 5 days to test
+* How will your function be used?
+	* Gambling: setting lines
+* How will you evaluate predictions?
+	* Accuracy
+	* MSE
+* What is a baseline predictor?
+	* Team win/loss records 
+	* Baseline is the total win/loss record of the teams
+
+### Example 3: Energy Usage
+![[Pasted image 20240106222854.png]]
+How much energy is needed at different times of the day to make sure people's power doesn't go out.
+
+- What are the inputs and outputs?
+	- Inputs: features describing situation - date, time, weather (15 min intervals)
+	- Outputs: energy usage (KW)
+- What is the labeled data?
+	- Previous observations
+* Considerations for train/test split?
+	* Rolling predictions - trying to get future predictions
+* How will your function be used?
+	* Coordinating mixture of power sources
+* How will you evaluate predictions?
+	* MSE
+* What is a baseline predictor?
+	* Average usage
+
+# Review
+* What is a **function**?
+	* Mappings from x to y
+* What is a **model**?
+	* Learned function
+* What is meant by **generalization**?
+	* Measure of the ability of our models to be usefully applied to new data
+* What is **overfitting**?
+	* Condition of intricacies of the training data at the expense of generalization
+	* Simple model might work better
+* Why do we need a train/test split?
+	* Allows us to simulate how the model will be used in the real world
+	* Use test set to calculate MSE
+* Why do we want a **baseline**?
+	* Calibrate expectations
+	* What does an MSE of 17 mean? It is relative to the baseline.
