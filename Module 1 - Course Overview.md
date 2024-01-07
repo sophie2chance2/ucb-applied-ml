@@ -113,4 +113,34 @@
 - Logical functions 
 	- Outputs are deterministic
 	- Testing is logical and typically checks extreme cases
-- ML is about learning *statistical functions* 
+- ML is about learning *statistical functions* from data
+	- Outputs are predictions
+	- Testing is statistical and typically checks *average case*
+- Supervised ML depends on labeled data
+	- Behavior of the model reflects the data
+	- Need separate test data to evaluate generalization
+	- Model is ONLY going to reflect what is IN the data
+	![[Pasted image 20240106190444.png]]
+	* We have been taking about step 3 but pre-processing is SUPER important
+	* START with the data THEN ask the question of what that would help you answer. Be concrete about it.
+* Framing: Defining a Task
+	* What are the inputs and outputs?
+	* What is the labeled data?
+	* How will you evaluate predictions?
+	* Considerations for train/test split?
+		* Is there some reason that a random split would not be a good fit for this data?
+		* What are the circumstances under which that this model will be used in the real world?
+	* How will your function be used?
+	* What is a baseline predictor?
+		* Important for collaborating the model. Is this model preforming well? What is the comparison?
+
+### Example 1: Lung Cancer Screening
+* Diagnostic screening has gotten even better than human screening
+* Questions to ask ourselves:
+	* What are the inputs and outputs?
+		* Input: CT/Cat scan images (3Dish)
+		* Output: Cancer Probability (yes/no) - prob .9
+		* Output: image regions and probabilities
+			* Output will probably be the most useful when used in conjunction with an expert
+	* What is the labeled data?
+		* Scans annotated by human experts
