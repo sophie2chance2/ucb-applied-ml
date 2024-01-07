@@ -28,7 +28,7 @@
 	* Run experiments
 	* Write a summary report and present to class
 
-## Machine Learning and Artificial Intelligence
+### Machine Learning and Artificial Intelligence
 - "Programming agents by hand can be very tedious; some more expeditious method seems more desirable" - Turing
 - Machine Learning & AI - often show overlapping meanings - both replicating human, calculating based on sensory input, using human intelligence to produce other intelligence
 - Ngram Viewer
@@ -76,3 +76,41 @@
 	- indirect supervision
 	- Child points to a dog and says "cat" then mom/dad corrects
 
+# What is a function?
+* Takes some input (x) applies a transformation f(x) and creates an output y
+* Mapping between sets, for each input there is one corresponding output item
+* One value of x cannot map to multiple ys, but y can map to many xs
+* Circle is not a function
+* Input/output can be many different datatypes
+* *Deterministically* = always
+### Function Testing
+* Similar to testing any function you code
+* need to check the yi against the yi^ to know how far off predictions were, and if the model is running well
+* Results in Mean Squared error - common for regression problems
+ ![[Pasted image 20240105174832.png]]
+
+### Generalization
+* The dataset for training and testing cannot be the same data
+* Learning = training
+* Both the blue and the black lines are possible
+ ![[Pasted image 20240106185046.png]]
+ * The blue model goes through every single point making the Mean Squared Error (MSE) = 0 
+ * The black model will have a higher MSE
+	 * Does that make it better?
+* When testing data is added, how do each of the models preform?
+	* Calculating the MSE on the test data is critical - must be different from training
+* Generalization - Capability to learn from some examples in a way that transfers to new examples
+	* Single term that summarizes the goal of supervised machine learning
+* Simulate generalization by splitting data into train and test
+	* Could be a random split 
+	* Could depend on other properties of the data
+	* 80% train, 20% test
+* Blue model (above) is an example of overfitting
+	* **Ocram's razor** - All things being equal, the simpler explanation is better
+* Overfitting - it has learned to fit the training model too well, at the expense of generalization
+
+### ML Framing
+- Logical functions 
+	- Outputs are deterministic
+	- Testing is logical and typically checks extreme cases
+- ML is about learning *statistical functions* 
