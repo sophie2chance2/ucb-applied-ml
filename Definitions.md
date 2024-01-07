@@ -1,7 +1,8 @@
+
 | **Word** | **Definition** | Link |
 | ---- | ---- | ---- |
 | Ngram | Sequence of n words that we treat as a unit | [[Module 1 - Course Overview#Machine Learning and Artificial Intelligence]] |
-| Machine Learning | Algorithms improve through experience with data, distinct for its adaptability |  |
+| Machine Learning | Algorithms improve through experience with data, distinct for its adaptability | [[Module 1 - Course Overview#Machine Learning]] |
 | Artificial Intellegence | Encompasses any technique enabling machines to mimic human behavior, broader than machine learning. | [[Module 1 - Course Overview#Artificial Intelligence]] |
 | Deep Learning | Specialized in processing large, complex datasets using multi-layered neural networks, a deeper subset of machine learning. | [[Module 1 - Course Overview#Deep Learning]] |
 | Supervised Learning | Relies on labeled datasets to train algorithms, making it specific for prediction based on known examples. | [[Module 1 - Course Overview#Supervision]] |
