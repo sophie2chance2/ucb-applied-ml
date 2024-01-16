@@ -115,4 +115,56 @@ Learned Functions = Models
 # Gradient Descent: Derivation
 - Central algo relies on taking derivatives - software does all the math for you
 - ![[Pasted image 20240115182419.png]]
-- 
+- ![[Pasted image 20240115182929.png]]
+
+# Gradient Descent: In Practice
+#### Batch Size, Epochs, Stochastic Gradient Descent
+* Stochastic Gradient Descent: Randomly chosen examples to calculate the gradient
+	* One example to compute the gradient
+* Gradient Descent: estimate gradient from ALL data
+	* Inefficient for large datasets
+	* Unnecessarily precise estimate of gradient
+* Mini-batch Stochastic Gradient Descent: estimate gradient from small batches of examples
+	* Used in practice
+	* Batch size is a hyper-parameter
+	* Referred to as SGD
+* Epoch: A single pass through the data
+	* Every time you try to compute the gradient with all the data
+	* In a SGD, you are only getting batches, so you would need many passes before you get an epoch
+		* How many epochs do you need before you reach convergence?
+			* It depends: how large alpha is, what you are estimating, etc.
+	* The more times you look over the training data, the more likely you are to overfit
+
+#### Differentiable Loss Functions
+* Not all functions are differentiable
+* Tools like TensorFlow or PyTorch have built-in tricks
+* Need to be mindful of global minimums v local minimums
+	* ![[Pasted image 20240115184641.png]]
+		* Run a few times if you know that you have a non-convex shaped function
+		* Linear regression is convex
+* ![[Pasted image 20240115184823.png]]
+	- One trick is to keep track of the momentum of the gradient
+		- Can look at the average of previous gradients
+		- Hard to know when you are at a global min v plateau
+- Notes on gradient
+	- Compute a partial derivative for each parameter (holding others constant)
+	- Stack the partial derivatives in a vector
+	- ![[Pasted image 20240115185104.png]]
+	- ^ notation
+	- Vector points in the direction of steepest descent
+
+# Review
+* Model, Loss, Parameters, Objective
+* What does learning by optimization mean?
+	* Most successful for computers
+	* Specifying loss relative to our training data and specifying how we can take derivatives to give us an algorithm that the computer can use
+* Why do we need gradient descent?
+	* Make process of optimization more efficient
+	* Eliminates need to do exhaustive testing for ALL data
+	* Which direction the next step should be
+* What does a batch refer to in SGD?
+	* Randomly choose little mini batches of examples from training data to compute the gradient rather than all of the examples
+	* More efficient
+* Do we stop SGD when the loss reaches 0?
+	* No, it is possible that the loss could reach 0. But we don't expect that our model will perfectly fit. 
+	* If it is 0 it probably means the data is overfit.

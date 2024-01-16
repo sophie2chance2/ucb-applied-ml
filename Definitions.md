@@ -13,7 +13,7 @@
 | Ocram's Razor | All things being equal, the simpler explanation is better | [[Module 1 - Introduction & Framing#Generalization]] |
 | Overfitting | The model has learned to fit the training model too well, at the expense of generalization | [[Module 1 - Introduction & Framing#Generalization]] |
 | Calibration | Adjusting a model's output to ensure its predicted probabilities accurately reflect the true likelihood of an event or outcome | [[Module 1 - Introduction & Framing#Example 1 Lung Cancer Screening]] |
-| Epoch |  |  |
+| Epoch | A single pass through the data |  |
 | Batch |  |  |
 | Fold |  |  |
 | Training data |  |  |
@@ -23,3 +23,9 @@
 | Convergence |  | [[Module 2 - Linear Regression & Gradient Descent#Gradient Decent Intuition]] |
 | Divergence |  |  |
 | Hyper-parameter |  |  |
+| Stochastic Gradient Descent |  | [[Module 2 - Linear Regression & Gradient Descent#Gradient Descent In Practice]] |
+| Non-Convex |  | [[Module 2 - Linear Regression & Gradient Descent#Differentiable Loss Functions]] |
+| Model |  |  |
+| Loss |  |  |
+| Parameters |  |  |
+| Objective |  |  |
