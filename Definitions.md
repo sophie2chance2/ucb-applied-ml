@@ -17,6 +17,9 @@
 | Batch |  |  |
 | Fold |  |  |
 | Training data |  |  |
-| Loss curve |  |  |
+| Loss curve |  | [[Module 2 - Linear Regression & Gradient Descent#The Loss Function]] |
 | Gradient Descent |  |  |
-|  |  |  |
+| Learning Rate |  | [[Module 2 - Linear Regression & Gradient Descent#Learning Rate]] |
+| Convergence |  | [[Module 2 - Linear Regression & Gradient Descent#Gradient Decent Intuition]] |
+| Divergence |  |  |
+| Hyper-parameter |  |  |
