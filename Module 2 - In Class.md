@@ -27,5 +27,22 @@ https://colab.research.google.com/drive/10umkNtjwgsrTuhX_Lk9YU0JuecPLCb1b?usp=sh
 	* Build transformers to not get fired 
 
 # Fiddle Sticks
-- Joseph Schueder - Generative AI for SMU
+- Joseph Schueder - Generative AI for SMU (RTX, Ratheon, Collins Aerospace)
+- Considerations
+	- Pricing
+	- Scalability/Response Time
+	- Quality
+	- Privacy & Security
+	- Bias
+- ![[Pasted image 20240116174752.png]]
+- ![[Pasted image 20240116174901.png]]
+- Uses a second LLM to look for un-secure prompts
+	- External model
+- Orchestration -> is a set of models
+- Go external as much as we can
+	- Confidence in that falls to chief AI scientist
+	- Text is the beginning, next is text, video, etc.
+	- Just call the models
+	- In a small company a differentiator could be the model if you build it from scratch. If you are a big company, cost is more of the factor.
+- Tech Stack ![[Pasted image 20240116175815.png]]
 - 
