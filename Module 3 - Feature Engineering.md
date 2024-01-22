@@ -45,10 +45,20 @@
 		- Differences size: (m, 1)
 		- Gradient size: (m, 1)
 		- Gradient is an average over all of the examples
+
 # Features Overview
-- Feature Engineering
-	- Data needs to be numeric
-	- Need to take raw data and transform it into a feature vector ![[Pasted image 20240121195251.png]]
-	- Each row is an example
+- Data needs to be numeric
+- Need to take raw data and transform it into a feature vector ![[Pasted image 20240121195251.png]]
+- Each row is an example
 - Numeric values may or may not have a linear relationship with output
-- 
+- Feature Engineering
+	- Cleaning raw data
+		- Handle missing values, outliers
+	- Produce numeric features
+		- Covert categories, text, images, audio
+		- Transform to similar scales
+	- Combine to form new features
+	- Keep only useful features
+
+# Feature Engineering
+
