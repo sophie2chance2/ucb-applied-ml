@@ -62,3 +62,20 @@
 
 # Feature Engineering
 
+- Goals of example:
+	- Predict price as accurately as possible
+		- For cars that have not been seen before
+	- Using numeric features
+		- You can feed to a model
+	- A minimal set of features
+		- Is more efficient 
+		- And easier to interpret
+- Anscombe's Quartet
+	- Need to be very familiar with YOUR data and how it should be grouped/edited ![[Pasted image 20240122175931.png]]
+		- All of these have the same regression line, but VERY different data. 
+		- Outliers and shapes can make a really big difference
+- Missing features
+	- Raw data can be missing information
+		- Remove rows with missing value
+		- Replace missing values with an average
+		- Special "missing" value
