@@ -133,3 +133,48 @@
 			* Start with no features
 			* Try each feature alone and see which of the features improves things the most
 		* Top-down: remove features one at a time
+		* Test Data Accuracy ![[Pasted image 20240123081103.png]]
+			* Decreases because you start to overfit
+* Curse of Dimensionality
+	* Examples of 2 features is easy to visualize, but 10 dimensions is hard to imagine
+	* Size of the space grows exponentially
+		* Points start to space out, leaving most of the space empty
+			 - Can make it harder to fit lines in high dimensions of space
+			 - The more data we add, the more confidence we have in the fitted line
+- Feature Engineering Advice
+	- With more features you need more data
+	- Visualize the data
+	- Start with a baseline, add complexity only if necessary
+	- Analyze errors for intuition about missing info
+		- What would need to change for the model to do better on the bad predictions?
+## Case Study
+- Used Car Price Prediction
+	- ~ 450M listings from Craigslist (data on Kaggle)
+		- 26 possible features including list price
+		- More realistic pricing than Kelly Blue Book?
+- Missing values
+	- Throw out some features
+		- Image, Lat/Long, VIN
+		- VIN doesn't have a relationship with price
+		- Lat/Long by themselves are not very useful, needs to be transformed/processed to be useful
+		- Image - could say what types of photos are best for selling cars
+	- Drop cars with extreme values
+		- $100 > Price > $100k
+	- Impute some missing values
+		- Recent year -> condition = new
+- Feature engineering
+	- Convert categorical to numerical
+	- Values scaled to [0,1]
+		- Not z-scale, just linearly mapping to range
+- Train/Test Split
+	- Randomly choose 80% of examples for training 20% for testing
+	- Remember, the goal is to predict prices for cars in the test set
+	- Could split by year. Train [1990-2018] test [2018 - 2020]
+- Visualize Distributions
+- ![[Pasted image 20240123084850.png]]
+- ![[Pasted image 20240123085128.png]]
+- ![[Pasted image 20240123085137.png]]
+- Linear regression Performance
+	- ![[Pasted image 20240123085243.png]]
+	- Mean Absolute Error - the average price that our model is off by
+	- Mean squared Error - squaring when we get it wrong
