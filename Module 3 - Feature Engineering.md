@@ -84,5 +84,31 @@
 - Log Scaling
 	- Many natural distributions are exponential
 		- Like popularity
-		- Lots of ratings for the head
-		- Few ratings for the tail
+		- Lots of ratings for the *head*
+		- Few ratings for the *tail*
+		- ![[Pasted image 20240122231214.png]]
+- Z-Score Scaling
+	- Move distribution to have mean = 0, variance = 1
+		- Subtract the mean
+		- Divide by the standard deviation
+		- ![[Pasted image 20240122231305.png]]
+	- Allows you to have all of your features in the same range
+- Bucketing
+	- Some distributions are more complex (multimodal)
+	- ex. lat/long tells you what city
+	- ![[Pasted image 20240122231453.png]]
+	- Let the model learn weights based on buckets, split up into 10 different buckets
+	- Even Space Bucketting ![[Pasted image 20240122231537.png]]
+	- Bucketing - Quantities ![[Pasted image 20240122231638.png]]
+- Categorical Features
+	- ex.
+		- All-wheel drive [true, false] -> [1, 0]
+			- 1 is indicator
+		- Color [black, white, red] -> [0, 1, 0]
+		- Make [ford, bmw, audi, honda] -> [0, 0, 0, 1]
+			- One-hot vector
+	- Dense Representation: [1, 0, 0, 1, 0, 0, 0, 0, 1]
+		- Combination of each of the above
+		- Need to know what each index represents
+	- Sparse Representation: [0, 2, 7]
+		- Index of each of the 1s

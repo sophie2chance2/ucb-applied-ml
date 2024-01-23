@@ -30,3 +30,10 @@
 | Parameters |  |  |
 | Objective |  |  |
 | Feature Vector |  |  |
+| Z-score scaling |  |  |
+| Bucketing |  |  |
+| Log scaling |  |  |
+| One-hot vectors |  |  |
+| Multi-hot vector |  |  |
+| Dense Representation |  |  |
+| Sparse Representation |  |  |
