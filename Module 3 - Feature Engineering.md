@@ -79,3 +79,10 @@
 		- Remove rows with missing value
 		- Replace missing values with an average
 		- Special "missing" value
+- Transforming Features
+	- Linear regression assumes linear relationships
+- Log Scaling
+	- Many natural distributions are exponential
+		- Like popularity
+		- Lots of ratings for the head
+		- Few ratings for the tail
