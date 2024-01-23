@@ -115,4 +115,21 @@
 - Feature Scaling
 	- Suppose each feature has a different scale
 	- ![[Pasted image 20240123075112.png]]
-- 
+	- [horsepower, peak-rpm, city-mpg] = [27, 195, 1.8]
+		- Usually choose 1 learning rate that applies to all which won't work if they are on different scales
+		- Scale to the largest feature (peak-rpm)
+		- Use mean and var to scale
+	- Want to put all of the features into a similar scale
+	- Helps so that the gradient is comparable
+- Feature Crosses
+	- Consider the relationships
+		- HP vs price - Linear
+		- Seats vs price - Linear
+		* (HP x Seats) vs Price - Non-linear U shape
+* Feature Selection
+	* We don't want a model with a bunch of random features
+	* Only useful features
+		* Bottom up: add features one at a time
+			* Start with no features
+			* Try each feature alone and see which of the features improves things the most
+		* Top-down: remove features one at a time
