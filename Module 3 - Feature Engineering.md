@@ -112,3 +112,7 @@
 		- Need to know what each index represents
 	- Sparse Representation: [0, 2, 7]
 		- Index of each of the 1s
+- Feature Scaling
+	- Suppose each feature has a different scale
+	- ![[Pasted image 20240123075112.png]]
+- 
