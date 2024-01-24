@@ -5,7 +5,11 @@
 - Use Poetry
 - Good way of checking for nans -> if instance(x, float):
 - ![[Pasted image 20240123181555.png]]
-- 
+- Extensions
+	- Live Share Extension Pack
+	- Rewrap
+	- Todo Tree
+- [zed.dev]
 
 
 # 1/9/2024
