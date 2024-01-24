@@ -10,7 +10,14 @@
 	- Rewrap
 	- Todo Tree
 - [zed.dev]
+- https://docs.google.com/document/d/1XUREwbCaota_nci5SIEmBsx_MDChitP_7aEiDdfkEzY/edit
+```
+{ // Use IntelliSense to learn about possible attributes. // Hover to view descriptions of existing attributes. // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387 "version": "0.2.0", "configurations": [ { "name": "Python: Current File", "type": "python", "request": "launch", "program": "${file}", "console": "integratedTerminal", "python.formatting.provider": "black", "python.linting.enabled": true, "files.autoSave": "afterDelay", "files.autoSaveDelay": 10000, "python.linting.lintOnSave": true, // "justMyCode": false, } ] }
+```
 
+```
+{ "todo-tree.tree.showCountsInTree": true, "todo-tree.highlights.defaultHighlight": { "icon": "alert", "type": "tag", "foreground": "white", "background": "white", "opacity": 50, "iconColour": "orange" }, "todo-tree.highlights.useColourScheme": true, "todo-tree.highlights.customHighlight": { "[ ]": { "icon":"pencil", "type": "text", "background": "green", "foreground": "white", "iconColour": "yellow", "gutterIcon": true }, "[x]": { "icon":"check", "background": "green", "foreground": "yellow", "iconColour": "green", "gutterIcon": true }, "TODO": { "icon": "eye", "type": "text", //This highlights the whole line "background": "blue", "foreground": "yellow", "iconColour": "yellow", // "foreground": "#ee00b2", // "iconColour": "#ee00b2", "gutterIcon": true }, "FIXME": { "icon":"flame", "background": "red", "foreground": "green", "iconColour": "green", "gutterIcon": true }, "BUG": { "icon":"bug", "background": "red", "foreground": "white", "iconColour": "red", "gutterIcon": true }, "NOTE": { "icon":"beaker", "foreground": "navy", "background": "orange", "iconColour": "orange", "gutterIcon": true }, "CLASS": { "icon":"package", "background": "red", "foreground": "white", "iconColour": "red", "gutterIcon": true }, "MEAS": { "icon":"log", "type": "text", "foreground": "navy", "background": "orange", "iconColour": "orange", "gutterIcon": true }, "FUNCTION": { "icon":"law", "type": "text", "foreground": "purple", "background": "white", "iconColour": "purple", "gutterIcon": true }, "IDEA": { "icon":"light-bulb", "type": "text", "foreground": "yellow", "background": "blue", "iconColour": "yellow", "gutterIcon": true } }, "todo-tree.general.tags":[ "[ ]", "[x]", "TODO", "FIXME", "BUG", "NOTE", "IDEA", "CLASS", "MEAS", "FUNCTION", ], "python.formatting.provider": "black", "python.defaultInterpreterPath": "${workspaceFolder}/.venv" // "jupyter.alwaysScrollOnNewCell": true }
+```
 
 # 1/9/2024
 - We are going to be people managers and chat bot managers
