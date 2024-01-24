@@ -215,4 +215,5 @@ for i in range(len(x_data)):
 Live coding
 - CMD + R source - find the most recent thing that you ran in terminal
 - Open python in terminal and shift + ___ to copt over to terminal
-- pdb; pdb.s
+- Debugging:
+	- import pdb; pdb.set_trace()

@@ -1,3 +1,13 @@
+# 1/23/2024
+
+- New competitive advantage is going to be who has the best QUALITY of data
+- ![[Pasted image 20240123174117.png]]
+- Use Poetry
+- Good way of checking for nans -> if instance(x, float):
+- ![[Pasted image 20240123181555.png]]
+- 
+
+
 # 1/9/2024
 - We are going to be people managers and chat bot managers
 - The standard of data scientist is going up
