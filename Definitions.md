@@ -37,3 +37,4 @@
 | Multi-hot vector |  |  |
 | Dense Representation |  |  |
 | Sparse Representation |  |  |
+| Sigmoid activation |  |  |
