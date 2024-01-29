@@ -81,13 +81,13 @@
 		- Special "missing" value
 - Transforming Features
 	- Linear regression assumes linear relationships
-- Log Scaling
+* Log Scaling
 	- Many natural distributions are exponential
 		- Like popularity
 		- Lots of ratings for the *head*
 		- Few ratings for the *tail*
 		- ![[Pasted image 20240122231214.png]]
-- Z-Score Scaling
+* Z-Score Scaling
 	- Move distribution to have mean = 0, variance = 1
 		- Subtract the mean
 		- Divide by the standard deviation

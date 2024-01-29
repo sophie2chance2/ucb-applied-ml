@@ -14,27 +14,27 @@
 | Overfitting | The model has learned to fit the training model too well, at the expense of generalization | [[Module 1 - Introduction & Framing#Generalization]] |
 | Calibration | Adjusting a model's output to ensure its predicted probabilities accurately reflect the true likelihood of an event or outcome | [[Module 1 - Introduction & Framing#Example 1 Lung Cancer Screening]] |
 | Epoch | A single pass through the data |  |
-| Batch |  |  |
-| Fold |  |  |
-| Training data |  |  |
-| Loss curve |  | [[Module 2 - Linear Regression & Gradient Descent#The Loss Function]] |
-| Gradient Descent |  |  |
-| Learning Rate |  | [[Module 2 - Linear Regression & Gradient Descent#Learning Rate]] |
-| Convergence |  | [[Module 2 - Linear Regression & Gradient Descent#Gradient Decent Intuition]] |
-| Divergence |  |  |
-| Hyper-parameter |  |  |
-| Stochastic Gradient Descent |  | [[Module 2 - Linear Regression & Gradient Descent#Gradient Descent In Practice]] |
-| Non-Convex |  | [[Module 2 - Linear Regression & Gradient Descent#Differentiable Loss Functions]] |
-| Model |  |  |
-| Loss |  |  |
-| Parameters |  |  |
-| Objective |  |  |
-| Feature Vector |  |  |
-| Z-score scaling |  |  |
-| Bucketing |  |  |
-| Log scaling |  |  |
-| One-hot vectors |  |  |
-| Multi-hot vector |  |  |
-| Dense Representation |  |  |
-| Sparse Representation |  |  |
-| Sigmoid activation |  |  |
+| Batch | A set of data points processed together in a machine learning algorithm.  |  |
+| Fold | A subset used in cross-validation to validate a model during training. |  |
+| Training data | Data used to train a machine learning model. |  |
+| Loss curve | A graph showing the model's loss over time during training. | [[Module 2 - Linear Regression & Gradient Descent#The Loss Function]] |
+| Gradient Descent | An optimization algorithm to minimize the loss function in learning. |  |
+| Learning Rate | A parameter that determines the step size during gradient descent. | [[Module 2 - Linear Regression & Gradient Descent#Learning Rate]] |
+| Convergence | The process of an algorithm approaching a stable solution. | [[Module 2 - Linear Regression & Gradient Descent#Gradient Decent Intuition]] |
+| Divergence | When an algorithm moves away from a solution, often due to high learning rate. |  |
+| Hyper-parameter | A parameter set prior to the learning process and not learned from data. |  |
+| Stochastic Gradient Descent | A variant of gradient descent using a single data point at each iteration. | [[Module 2 - Linear Regression & Gradient Descent#Gradient Descent In Practice]] |
+| Non-Convex | A function with multiple local minima and maxima. | [[Module 2 - Linear Regression & Gradient Descent#Differentiable Loss Functions]] |
+| Model | An abstract representation learned from data to make predictions. |  |
+| Loss | A measure of how far a model's predictions are from the actual values. | [[Module 2 - Linear Regression & Gradient Descent#The Loss Function]] |
+| Parameters | Variables in a model that are learned from the training data. |  |
+| Objective | The goal or function that a machine learning model is trying to optimize. |  |
+| Feature Vector | An array of numerical features representing an instance in data. |  |
+| Z-score scaling | Standardization of data by subtracting mean and dividing by standard deviation. |  |
+| Bucketing | Grouping continuous variables into discrete categories. |  |
+| Log scaling | Applying logarithmic transformation to scale data. | [[Module 3 - Feature Engineering#Feature Engineering]] |
+| One-hot vectors | Binary vectors representing categorical data, with exactly one high bit. |  |
+| Multi-hot vector | Binary vectors representing categorical data, with multiple high bits. |  |
+| Dense Representation | A data representation where most elements are non-zero. |  |
+| Sparse Representation | A data representation mostly made up of zeros. |  |
+| Sigmoid activation | An S-shaped function mapping inputs to values between 0 and 1. |  |
