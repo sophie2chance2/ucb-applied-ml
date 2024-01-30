@@ -85,4 +85,11 @@ $$
 
 # Gradient Descent with Log Loss
 
-- 
+- ![[Pasted image 20240130082636.png]]
+- Log loss is differentiable
+- and convex
+	- We will get to the global minimum
+- and the gradient computation is exactly the same as linear regression with squared error loss
+### Taking the derivative: 
+![[Pasted image 20240130083102.png]]
+![[Pasted image 20240130083136.png]]
