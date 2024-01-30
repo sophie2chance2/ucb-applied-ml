@@ -93,3 +93,7 @@ $$
 ### Taking the derivative: 
 ![[Pasted image 20240130083102.png]]
 ![[Pasted image 20240130083136.png]]
+![[Pasted image 20240130093740.png]]
+![[Pasted image 20240130093934.png]]
+![[Pasted image 20240130094038.png]]
+![[Pasted image 20240130094114.png]]
