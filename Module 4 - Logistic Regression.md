@@ -77,4 +77,12 @@ $$
 	- ![[Pasted image 20240130080952.png]]
 		- You are either right or wrong. Either 0 or 1.
 - ![[Pasted image 20240130081020.png]]
+- $$ \text{LogLoss} = \frac{1}{m} \sum_{i} -y_i \log(\hat{y}_i) - (1 - y_i)\log(1 - \hat{y}_i) $$
+### Formula Broken Down
+- Multiply the true label, by the log of the predicted label. Works when y_i = 1 $$y_i \log(\hat{y}_i)$$
+- Active when y_i = 0 $$ - (1 - y_i)\log(1 - \hat{y}_i) $$
+- ![[Pasted image 20240130082443.png]]
+
+# Gradient Descent with Log Loss
+
 - 
