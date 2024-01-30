@@ -55,5 +55,26 @@ $$
 	- ![[Pasted image 20240129222118.png]]
 	- 0 hours:  $$ \frac{1}{(1+e^{-3})} = 0.047 $$
 	- 2 hours: $$ \frac{1}{(1+e^{1})} = 0.269 $$
-		- If you study for 2 hours, then you have a 27% chance of passing the class
+		- "If you study for 2 hours, then you have a 27% chance of passing the class"
+	- 4 hours: .73
+	- 8 hours: .993
 
+# The Decision Boundary
+
+- Logistic regression predicts a probability
+- Example:
+	- ![[Pasted image 20240129223016.png]]
+- Use a threshold to get a label
+	- y' >= 0.5 -> class 1
+	- y' < 0.5 -> class 0
+- ![[Pasted image 20240129223231.png]]
+	- Accuracy = correct/total
+- ![[Pasted image 20240129223913.png]]
+
+# Logistic Loss
+
+- How can we use the error rate as our loss function?
+	- ![[Pasted image 20240130080952.png]]
+		- You are either right or wrong. Either 0 or 1.
+- ![[Pasted image 20240130081020.png]]
+- 
