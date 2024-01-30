@@ -48,6 +48,12 @@ $$
 ![[Pasted image 20240128201541.png]]
 - b = midpoint
 
-
-
+# Classification Example
+- Passing Grade Classifier
+![[Pasted image 20240129221734.png]]
+- Fully specified model:
+	- ![[Pasted image 20240129222118.png]]
+	- 0 hours:  $$ \frac{1}{(1+e^{-3})} = 0.047 $$
+	- 2 hours: $$ \frac{1}{(1+e^{1})} = 0.269 $$
+		- If you study for 2 hours, then you have a 27% chance of passing the class
 
