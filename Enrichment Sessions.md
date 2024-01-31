@@ -1,3 +1,26 @@
+# 1/30/2024
+
+- Focus on one thing for a period at a time, then move on
+- Senior Data Scientist @ Blue Crew - match blue collar workers with appropriate jobs
+- Used to use [streamlit](https://streamlit.io/) at the end of a project - NOW, Start with streamlit to see what the end result should be, then reverse engineer it
+
+- Question:
+	- Is using ML the right approach for matching a person to a job
+- ![[Pasted image 20240130174619.png]]
+- ![[Pasted image 20240130174710.png]]
+- ![[Pasted image 20240130174922.png]]
+- Reinforcement learning:
+	- One of the 3 pillars of learning: supervised, unsupervised, reinforcement
+	- TYPE/FRAMEWORK of learning
+	- Uses trial and error
+- Data important in industry - algorithm important in academia
+- If someone gets a job -> reward, if someone does not get a job -> penalty
+
+
+- Start with STREAMLIT
+![[Pasted image 20240130175754.png]]
+
+
 # 1/23/2024
 
 - New competitive advantage is going to be who has the best QUALITY of data
