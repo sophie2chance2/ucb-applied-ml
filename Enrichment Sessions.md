@@ -19,6 +19,35 @@
 
 - Start with STREAMLIT
 ![[Pasted image 20240130175754.png]]
+- Exploration: try a bunch to find the best
+- Exploitation: one place over and over
+
+![[Pasted image 20240130180138.png]]
+- Q-table: 
+	- Initializes at 0
+	- States are workers
+	- Columns are jobs
+![[Pasted image 20240130180310.png]]
+- Scores listed, show how good of a match they are
+- Synthetic data can show why you need more data and what that data looks like
+	- Combine with streamlit to make your case
+- Start with the most simple model
+	- ![[Pasted image 20240130181924.png]]
+	- ![[Pasted image 20240130181953.png]]
+	- ![[Pasted image 20240130182034.png]]
+### Synthetic Data Generation
+![[Pasted image 20240130182849.png]]
+
+![[Pasted image 20240130182927.png]]
+![[Pasted image 20240130182946.png]]
+- Free text is really hard to synthesize
+	- option: embeddings
+	- umap
+- LLMs is a bubble according to David Stroud
+	- Italy banned ChatGPT
+	- Reinforcement learning
+- Markov Decision Process
+
 
 
 # 1/23/2024
