@@ -40,4 +40,64 @@ Recall = True Positive / (True Positive + False Negative)
 	- Dense Representation: [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 	- Use dense representation in loss formula so that there is only one active term
 		- ![[Pasted image 20240211112022.png]]
-	- 
+- Cross Entropy Loss - General way to compute the difference or similarity between two distributions
+	- True Distribution
+	- Predicted Distribution
+	- ![[Pasted image 20240211114337.png]]
+# Network Graphs
+- ![[Pasted image 20240211114740.png]]
+	- Lines are the weights. In order to compute output class 0, you need 4 weights ie the green lines
+	- No dependencies between xs or ys to each other. Inputs are independent, outputs are independent
+	- ![[Pasted image 20240211115026.png]]
+		- W input, output
+	- ![[Pasted image 20240211115508.png]]
+		- Results in the y values 
+	- Can do with multiple batches, could be 10x4 or any size
+		- ![[Pasted image 20240211115650.png]]
+		- Keys that allows training to have training happen efficiently
+	- Neural Networks
+		- ![[Pasted image 20240211115802.png]]
+		- h's are Computational nodes
+		- Can create as many hidden layers as you want
+		- Just a stack of logistic regression layers and you can have as many as you want
+
+# Linear Model Limitations
+```
+weights, bias = model.layers[1].get_weights()
+for i in range(10):
+	plt.imshow(weights[:,i].reshape(28,28))
+```
+- first layer flattens to 784
+- second layer changes to (784, 10)
+
+![[Pasted image 20240211120342.png]]
+- Scale: Purple = -.5, White = neutral, Green = .5
+- ![[Pasted image 20240211120503.png]]
+	- Gap between the legs
+- Weaknesses
+	- Sensitive to size, color, orientation
+	- No concept of edges
+	- No concept of structure, relation between pixels
+	- Each pixel is looked at individually, no relationship to one another
+- Edge Detection
+	- ![[Pasted image 20240211120924.png]]
+	- Find sharp changes in pixel intensity
+	- This is a (spatial) gradient
+	- The gradient computation can be approximated by a special computation -- a convolution
+- Convolution
+	- Certain type of matrix multiplication
+	- Apply the kernel by placing it over the image
+	- Input = Image, Kernel = formula, output = Sum (image x kernel)
+	- Slide the kernel all around the image and create the output matrix
+	- ![[Pasted image 20240211121644.png]]
+- Convolution for Edge detection
+	- Smooth by averaging it with its neighboring pixels
+	- ![[Pasted image 20240211121856.png]]
+```
+kernel = np.array([[1, 0, -1],
+					[1, 0, -1],
+					[1, 0, -1]])
+orig = X_train[4]
+smoothed = scipy.ndimage.gaussian_filter(orig, sigma = 1)
+filtered = scipy.signal.convolve2d(smoothed, filter, boundry='symm', mode='same')
+```

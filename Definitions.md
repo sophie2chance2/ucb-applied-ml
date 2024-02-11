@@ -39,3 +39,5 @@
 | Sparse Representation | A data representation mostly made up of zeros. |  |
 | Sigmoid activation | An S-shaped function mapping inputs to values between 0 and 1. |  |
 | Softmax normalization | Scales a set of scores to a multinomial probability distribution | [[Module 5 - Multi-class Classification and Metrics#Multiclass Classification]] |
+| Cross Entropy Loss | General way to compute the difference or similarity between two distributions | [[Module 5 - Multi-class Classification and Metrics#Multiclass Loss]] |
+| Convolution |  | [[Module 5 - Multi-class Classification and Metrics#Linear Model Limitations]] |
