@@ -101,3 +101,21 @@ orig = X_train[4]
 smoothed = scipy.ndimage.gaussian_filter(orig, sigma = 1)
 filtered = scipy.signal.convolve2d(smoothed, filter, boundry='symm', mode='same')
 ```
+- When applied to sentiment analysis, it is important that words are associated to one another. Like "not" cannot be looked at without using other words too.  
+
+# Digit Classification History
+- MNIST Dataset - Modified National Institutes of Standards and Technology
+	- They come up with benchmarks in science and allow others to compare to it
+	- Mix of Census Bureau workers (40k) and High school students (30k). High school students handwriting is much worse, but all were mixed together
+	- When using dataset, think about what the source of the data was, does that apply to your project
+	- Image pre-processing
+		- Scaled to 20x20 pixels
+		- centered in 28x28 pixels (center of mass)
+		- Smoothed (anti-aliasing) producing grey-scale values
+	- Other methods that have worked, usually better than linear models ![[Pasted image 20240211131043.png]]
+	- Mail Sorting
+		- Recognizing zip codes has extra challenges
+			- Locating the zip code span (within the address)
+			- Size and spacing variability
+			- Separation between digits
+		- Needs to have high precision, when not sure sends to a human
