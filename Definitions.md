@@ -14,7 +14,7 @@
 | Overfitting | The model has learned to fit the training model too well, at the expense of generalization | [[Module 1 - Introduction & Framing#Generalization]] |
 | Calibration | Adjusting a model's output to ensure its predicted probabilities accurately reflect the true likelihood of an event or outcome | [[Module 1 - Introduction & Framing#Example 1 Lung Cancer Screening]] |
 | Epoch | A single pass through the data |  |
-| Batch | A set of data points processed together in a machine learning algorithm.  |  |
+| Batch | A set of data points processed together in a machine learning algorithm. |  |
 | Fold | A subset used in cross-validation to validate a model during training. |  |
 | Training data | Data used to train a machine learning model. |  |
 | Loss curve | A graph showing the model's loss over time during training. | [[Module 2 - Linear Regression & Gradient Descent#The Loss Function]] |
@@ -38,3 +38,4 @@
 | Dense Representation | A data representation where most elements are non-zero. |  |
 | Sparse Representation | A data representation mostly made up of zeros. |  |
 | Sigmoid activation | An S-shaped function mapping inputs to values between 0 and 1. |  |
+| Softmax normalization | Scales a set of scores to a multinomial probability distribution | [[Module 5 - Multi-class Classification and Metrics#Multiclass Classification]] |
