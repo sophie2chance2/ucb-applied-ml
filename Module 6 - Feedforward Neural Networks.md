@@ -118,3 +118,35 @@ $$ a_2 = w_1(w_0x)
 $$
 
 ![[Pasted image 20240213102717.png]]
+![[Pasted image 20240213103412.png]]
+![[Pasted image 20240213104759.png]]
+- Libraries with automatic Differentiation
+	- TensorFlow, PyTorch, etc.
+	- User constructs a computation graph
+	- System computes gradients
+	- Updates parameters
+	- and provides all kinds of tools
+	- Don't need to write code for back propagation
+
+# Neural Network Details
+- Non-linear functions
+	- If f is a linear function and g is a linear function, then their composition f(g(x)) is also a linear function
+	- These two chains do the same thing ![[Pasted image 20240213110350.png]]
+	- Without non-linear activations, all neural network functions could be reduced to a single layer
+![[Pasted image 20240213110453.png]]
+		- Derivative of ReLU is trivially easy, 0 or 1
+- Optimizers
+	- SGD
+	- ![[Pasted image 20240213110716.png]]
+	- Learning rate schedules
+		- choose a learning rate that decays and gets smaller as you continue training
+	- Momentum
+		- gradients are a combination of gradients before and current gradient
+	- Adagrad & Adam
+		- Adagrad - Dynamically selects and adjust learning rates of each parameter
+		- Adam - Combines adagrad and momentum
+	- Distributed optimizers
+		- send data to different machines and have each of them make predictions
+
+# Biological Inspiration
+Hubel & Wiesel Cat Experiment 1959
