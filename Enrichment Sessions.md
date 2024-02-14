@@ -1,5 +1,7 @@
 # 2/13/2024
 
+https://colab.research.google.com/drive/15Kb6guhwAlxIDoTqzyugzPB-hms9C78r?usp=sharing
+
 - llama2 was trained on 2 trillion tokens
 - LLM is encyclopedia of the web
 - The weights (parameters) represent the relationships
@@ -17,13 +19,22 @@
 	- from pydantic import BaseModel
 	- from typing import Union, Literal, Optional
 
+- Want 40-50 billion parameters to trust it
+
 ![[Pasted image 20240213174834.png]]
 
 ![[Pasted image 20240213175015.png]]
 ![[Pasted image 20240213175143.png]]
 ![[Pasted image 20240213175543.png]]
 ![[Pasted image 20240213175617.png]]
+![[Pasted image 20240213181618.png]]
 
+
+
+
+![[Pasted image 20240213181732.png]]
+- [Embers of auto regression - reading](https://arxiv.org/pdf/2309.13638.pdf)
+- terence tao - Einstein of today
 
 # 1/30/2024
 
