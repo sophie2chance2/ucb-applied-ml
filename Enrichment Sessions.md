@@ -1,3 +1,30 @@
+# 2/13/2024
+
+- llama2 was trained on 2 trillion tokens
+- LLM is encyclopedia of the web
+- The weights (parameters) represent the relationships
+- Structured outputs
+	- Json
+	- function
+- Data validation
+	- Data integrity - set types, don't just take it for granted
+	- Data quality
+	- Security
+
+
+- Data validation
+	- You can assign a variable and then it will change on its own
+	- from pydantic import BaseModel
+	- from typing import Union, Literal, Optional
+
+![[Pasted image 20240213174834.png]]
+
+![[Pasted image 20240213175015.png]]
+![[Pasted image 20240213175143.png]]
+![[Pasted image 20240213175543.png]]
+![[Pasted image 20240213175617.png]]
+
+
 # 1/30/2024
 
 - Focus on one thing for a period at a time, then move on
