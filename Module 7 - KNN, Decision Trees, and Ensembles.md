@@ -51,4 +51,7 @@
 	- ![[Pasted image 20240215124156.png]]
 - Norm of A
 	- ![[Pasted image 20240215124243.png]]
-- 
+- Dot Products
+	- The larger the dot product the MORE similar they are
+	- ![[Pasted image 20240215140020.png]]
+	- 
