@@ -54,4 +54,25 @@
 - Dot Products
 	- The larger the dot product the MORE similar they are
 	- ![[Pasted image 20240215140020.png]]
-	- 
+	- Min similarity: -1
+	- Max similarity: 1
+- K-nearest neighbor
+	- Training: no training!
+	- Inference
+		- Find the closest k training examples
+		- Return an average over the k labels
+			- May be weighted average
+	- Way of smoothing out nearest neighbor
+	- Commonly compute distances using dot products
+- Decision Boundaries
+	- KNN produces complex decision boundaries
+	- Increasing K smooths the boundary
+	- ![[Pasted image 20240215151430.png]]
+- Occam's Razor
+	- Principle of Parsimony
+		- Prefer the simplest explanation (fewest assumptions)
+		- Only add complexity as needed
+	- ![[Pasted image 20240215153420.png]] ![[Pasted image 20240215153456.png]]
+
+- KNN vs FFNN Classifiers
+	- KNN Appr
