@@ -46,3 +46,9 @@
 	- Inference
 		- Find the closest training example
 		- Return its label
+	- ![[Pasted image 20240215123912.png]]
+- Calculating Distances
+	- ![[Pasted image 20240215124156.png]]
+- Norm of A
+	- ![[Pasted image 20240215124243.png]]
+- 
