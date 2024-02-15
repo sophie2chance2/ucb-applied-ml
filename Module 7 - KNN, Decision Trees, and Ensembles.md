@@ -1,0 +1,48 @@
+
+# Review
+- Supervised Learning
+	- Input
+	- Output
+	- Function
+	- Data
+	- ![[Pasted image 20240215113848.png]]
+- Predictive Generalization
+	- Training Data (x, y)
+	- Test Data
+	- Generalization - Ability to apply the model to data outside of the training model
+	- Overfitting
+	- Red Dots: Test/New data, black line: linear regression model, blue line: overfit model ![[Pasted image 20240215113932.png]]
+- Optimization by Gradient Descent
+	- Model
+	- Parameters [w0, w1]
+	- Loss - Difference between the predicted values SUM(y^ - y)^2
+	- Objective - Choose the parameters that reduce loss
+	- ![[Pasted image 20240215114231.png]]
+- Adding Complexity with Layers
+	- ![[Pasted image 20240215115936.png]]
+	- Adding intermediate variables, h1 and h2
+	- y = b3 + w1h1 + w2h2
+		- h1 = b1 + w01x1 + w02x2
+	- Parameters: 9 - all the things in blue
+	- Loss = yhat - y
+	- Objective, the same, but more complicated because propagating loss back
+- Learning Non-Linear Transformations
+	- ![[Pasted image 20240215121054.png]]
+- Experimental Process
+	- Baseline
+	- Add complexity gradually
+	- Analyze errors
+	- Iterate on a model or data
+	- ![[Pasted image 20240215121317.png]]
+	- If you over train the data, the test error rate will go up meaning that the data is overfit ![[Pasted image 20240215121514.png]]
+
+# Nearest Neighbors
+- Parametric v Non-parametric
+	- Parametric: Model has learned parameters
+	- Non-parametric: No learned Parameters
+		- Memorizes the training data and predicts only based on what it has memorized
+- Nearest Neighbor
+	- Training: no training!
+	- Inference
+		- Find the closest training example
+		- Return its label

@@ -41,3 +41,5 @@
 | Softmax normalization | Scales a set of scores to a multinomial probability distribution | [[Module 5 - Multi-class Classification and Metrics#Multiclass Classification]] |
 | Cross Entropy Loss | General way to compute the difference or similarity between two distributions | [[Module 5 - Multi-class Classification and Metrics#Multiclass Loss]] |
 | Convolution |  | [[Module 5 - Multi-class Classification and Metrics#Linear Model Limitations]] |
+| Parametric | Model has learned parameters |  |
+| Non-parametric | No learned parameters | [[Module 7 - KNN, Decision Trees, and Ensembles#Nearest Neighbors]] |
