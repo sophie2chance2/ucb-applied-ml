@@ -43,8 +43,10 @@
 | Convolution |  | [[Module 5 - Multi-class Classification and Metrics#Linear Model Limitations]] |
 | Parametric | Model has learned parameters |  |
 | Non-parametric | No learned parameters | [[Module 7 - KNN, Decision Trees, and Ensembles#Nearest Neighbors]] |
-|  Internal Nodes | Test the value of a feature | [[Module 7 - KNN, Decision Trees, and Ensembles#Decision Trees]] |
+| Internal Nodes | Test the value of a feature | [[Module 7 - KNN, Decision Trees, and Ensembles#Decision Trees]] |
 | Leaf nodes | Output a predicted class or value | [[Module 7 - KNN, Decision Trees, and Ensembles#Decision Trees]] |
+| Bagging  | Train models in parallel via bootstrap sampling | [[Module 7 - KNN, Decision Trees, and Ensembles#Trees to Forests]] |
+| Boosting | Train additive models in series where each predicts the residual from previous model | [[Module 7 - KNN, Decision Trees, and Ensembles#Trees to Forests]] |
 
 
 | Method | Notes | Parametric | Normalization Necessary? | Example used in Class |

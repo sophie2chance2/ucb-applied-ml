@@ -179,8 +179,20 @@
 	- ![[Pasted image 20240215203553.png]]
 	- Sources of randomness:
 		- Random sampling of training examples
-		- Random subset of features
 			- Bootstrap sampling: sample training examples with replacement
+		- Random subset of features
+			- Only look at ⅝ of the features. Then all trees get different features to look at
 	- Important hyperparameters:
 		- Number of trees
 		- Max tree depth
+			- With one tree you don't want leaves with only one example, but with a forest it can help differentiate the trees
+				- Each individual tree will not generalize well, but in aggregate they will generalize better
+	- Gradient Boosting
+		1. First decision tree is created
+		2. Second decision tree looks at the errors of the first tree and accommodates for errors. Inputs are data and errors from first tree.
+		3. Repeat step 2.
+		![[Pasted image 20240215204720.png]]
+	- Ensemble Methods
+		- Bagging: train models in parallel via bootstrap sampling
+		- Boosting: train additive models in series where each predicts the residual from previous model
+![[Pasted image 20240215205120.png]]
