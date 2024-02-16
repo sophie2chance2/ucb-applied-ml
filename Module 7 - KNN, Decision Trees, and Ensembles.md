@@ -100,3 +100,20 @@
 	- ![[Pasted image 20240215160630.png]]
 		- Internal Nodes: Test the value of a feature
 		- Leaf nodes: Output a predicted class or value
+	- Expressiveness
+		- Express any logical function of the features
+		- Equivalent to a truth table for binary variables
+		- ![[Pasted image 20240215193100.png]]
+	- Decision Boundaries
+		- Boundaries are rectangular partitions
+		- Approximate diagonal lines with steps
+			- Won't be a true diagonal, will just be a bunch of little rectangles
+		- ![[Pasted image 20240215193223.png]]
+	- Learning for Decision Trees
+		- Many possible trees 
+			- Cannot just try every tree and see what works, we need to target it more than that
+		- Balance generalization and memorization
+			- Avoid learning trees that are unnecessarily deep
+			- We want the shallowest possible tree that still describes the data well
+		- Learned function derived from an algorithm
+			- Instead of learning by optimization, we are going to describe an algo that 
