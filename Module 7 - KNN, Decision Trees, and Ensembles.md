@@ -75,4 +75,28 @@
 	- ![[Pasted image 20240215153420.png]] ![[Pasted image 20240215153456.png]]
 
 - KNN vs FFNN Classifiers
-	- KNN Appr
+	- KNN Approach
+		- Use the input vector space
+		- Many examples of each class
+		- Apply the label from the closest example
+	- Neural Network Approach
+		- The network contorts the input vector space into a new vector space
+		- A single example of each class
+		- Apply the label from the closest "example"
+
+# Decision Trees
+- Baseline/ combined with Neural Networks
+- KNN Pros and Cons
+	- Pro 
+		- Predictions are easy to understand (interpretable)
+		- Might work with very few labeled examples
+	- Con
+		- Relies on a distance metric
+		- Easily fooled by outliers (noisy training examples)
+		- Poor scaling (slow)
+		- Poor generalization
+- Good case for a decision tree:
+	- ![[Pasted image 20240215160608.png]]
+	- ![[Pasted image 20240215160630.png]]
+		- Internal Nodes: Test the value of a feature
+		- Leaf nodes: Output a predicted class or value

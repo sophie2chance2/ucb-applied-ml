@@ -43,3 +43,5 @@
 | Convolution |  | [[Module 5 - Multi-class Classification and Metrics#Linear Model Limitations]] |
 | Parametric | Model has learned parameters |  |
 | Non-parametric | No learned parameters | [[Module 7 - KNN, Decision Trees, and Ensembles#Nearest Neighbors]] |
+|  Internal Nodes | Test the value of a feature | [[Module 7 - KNN, Decision Trees, and Ensembles#Decision Trees]] |
+| Leaf nodes | Output a predicted class or value | [[Module 7 - KNN, Decision Trees, and Ensembles#Decision Trees]] |
