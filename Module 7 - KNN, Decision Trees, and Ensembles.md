@@ -116,4 +116,71 @@
 			- Avoid learning trees that are unnecessarily deep
 			- We want the shallowest possible tree that still describes the data well
 		- Learned function derived from an algorithm
-			- Instead of learning by optimization, we are going to describe an algo that 
+			- Instead of learning by optimization, we are going to describe an algo that does the learning
+		- Like KNN, non-parametric
+
+# Decision Tree Learning
+- Decision Tree algorithm
+	- Goal: find a (small) tree consistent with the training data
+	- Note: greedy feature selection; when to stop growing?
+	- ![[Pasted image 20240215194340.png]]
+
+	1. Check for complete purity of the labels -> would turn it into a leaf
+	2. Choose the best feature -> splits the data into true/false based on best feature
+	3. Make recursive call back to GrowTree
+		- In example above blue true branch would return 1 leaf
+		- Yellow example would split again
+- Choosing the next feature
+	- Ideal feature selection creates "pure" subsets
+		- Need to measure purity
+		- Left example has [0, 20] making it very pure, where as vmail plan has a 50/50 split ![[Pasted image 20240215195245.png]]
+	- Interesting tidbit: ![[Pasted image 20240215195650.png]]
+	- Entropy
+		- Entropy is a measure of uncertainty
+		- More uncertainty requires longer codes (more information)
+		- ![[Pasted image 20240215195842.png]]
+	- Information Gain
+		- Information Gain = Entropy before - entropy after
+		- Weighted by number of examples
+		- ![[Pasted image 20240215200111.png]]
+		- ![[Pasted image 20240215200206.png]]
+		- .24 is the information gain of the international plan. This needs to be compared to others in order to be useful
+	- Non-Binary Features
+		- Categorical Features
+			- Convert to binary 
+				- one-hot-encode
+			- Or use higher branching factor
+				- Instead of having state with 2 branches, you have state with 50 branches
+		- Numerical features
+			- Choose a split point (threshold)
+				- (0-30), (30+)
+			- Using information gain
+		- Note: no normalization necessary!
+	- Notes
+		- On the churn metric Decision tree works much better than logistic regression because there are only about 8 features
+		- Regression trees
+			- Use MSE comparing average node output with the target values
+				- Average number of minutes this group used
+				- Instead of using Information gain, use MSE
+
+# Trees to Forests
+- Pro
+	- Emulates human descriptions of decision logic
+	- Arbitrary complexity (non-linear functions)
+	- Minimal pre-processing and scaling
+- Con
+	- Greedy search is non-optimal
+	- Poor generalization
+- Random Forest
+	- Build k decision trees
+		- Must each be different
+	- Use each tree to predict an output
+	- Take a vote
+	- ![[Pasted image 20240215203553.png]]
+	- Sources of randomness:
+		- Random sampling of training examples
+		- Random subset of features
+			- Bootstrap sampling: sample training examples with replacement
+	- Important hyperparameters:
+		- Number of trees
+		- Max tree depth

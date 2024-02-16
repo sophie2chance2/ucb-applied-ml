@@ -45,3 +45,12 @@
 | Non-parametric | No learned parameters | [[Module 7 - KNN, Decision Trees, and Ensembles#Nearest Neighbors]] |
 |  Internal Nodes | Test the value of a feature | [[Module 7 - KNN, Decision Trees, and Ensembles#Decision Trees]] |
 | Leaf nodes | Output a predicted class or value | [[Module 7 - KNN, Decision Trees, and Ensembles#Decision Trees]] |
+
+
+| Method | Notes | Parametric | Normalization Necessary? | Example used in Class |
+| ---- | ---- | ---- | ---- | ---- |
+| Logistic Regression |  | Yes | Yes |  |
+| Decision Tree | Works well when there are less features, but the features tell a lot about the final label | No | No | Churn |
+| Neural Network |  |  |  |  |
+| KNN |  | No | Yes |  |
+|  |  |  |  |  |
