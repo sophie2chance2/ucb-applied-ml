@@ -45,8 +45,14 @@
 | Non-parametric | No learned parameters | [[Module 7 - KNN, Decision Trees, and Ensembles#Nearest Neighbors]] |
 | Internal Nodes | Test the value of a feature | [[Module 7 - KNN, Decision Trees, and Ensembles#Decision Trees]] |
 | Leaf nodes | Output a predicted class or value | [[Module 7 - KNN, Decision Trees, and Ensembles#Decision Trees]] |
-| Bagging  | Train models in parallel via bootstrap sampling | [[Module 7 - KNN, Decision Trees, and Ensembles#Trees to Forests]] |
+| Bagging | Train models in parallel via bootstrap sampling | [[Module 7 - KNN, Decision Trees, and Ensembles#Trees to Forests]] |
 | Boosting | Train additive models in series where each predicts the residual from previous model | [[Module 7 - KNN, Decision Trees, and Ensembles#Trees to Forests]] |
+| Training example | A row in a table representing the dataset and synonymous with an observation, record, instance or sample |  |
+| Training | Model fitting for parametric models similar to a parameter estimation |  |
+| Feature | A column in a data table or data design matrix |  |
+| Target | Synonymous with outcome, output, response variable, dependent variable, label, and ground truth |  |
+| Loss Function | ie. error function, loss measured for a single datapoint |  |
+| Cost Function | Loss over the entire dataset |  |
 
 
 | Method | Notes | Learning Type (supervised/reinforcement/ect) | Parametric | Normalization Necessary? | Example used in Class |
@@ -56,3 +62,5 @@
 | Neural Network |  |  |  |  |  |
 | KNN |  |  | No | Yes |  |
 |  |  |  |  |  |  |
+
+# Supervised Learning

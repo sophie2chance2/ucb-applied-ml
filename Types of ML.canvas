@@ -1,0 +1,29 @@
+{
+	"nodes":[
+		{"id":"12f7554093cdc19a","type":"text","text":"Unsupervised Learning\n- No Labels\n- No feedback\n- Find hidden structure in data","x":90,"y":-160,"width":250,"height":180},
+		{"id":"95816217b2be2d37","type":"text","text":"Reinforcement Learning\n- Decision Process\n- Reward system\n- Learn series of actions","x":480,"y":-160,"width":250,"height":180},
+		{"id":"63cd1df76d6588bc","type":"text","text":"Machine Learning","x":90,"y":-360,"width":250,"height":60},
+		{"id":"3b76fe4dc8e4e42b","type":"text","text":"Classification\n![[Pasted image 20240221151855.png]]","x":-600,"y":140,"width":250,"height":280},
+		{"id":"13b5cf9a234f3976","type":"text","text":"Regression\n![[Pasted image 20240221151925.png]]","x":-255,"y":140,"width":250,"height":280},
+		{"id":"1486fc48f35a68bf","type":"text","text":"Clustering\n![[Pasted image 20240221151947.png]]","x":90,"y":140,"width":250,"height":280},
+		{"id":"b6d1c2d30f10b187","type":"text","text":"Decision Making\n![[Pasted image 20240221152004.png]]","x":480,"y":140,"width":250,"height":280},
+		{"id":"72263a10cb155ff3","type":"text","text":"Supervised Learning\n- Labeled Data\n- Direct feedback\n- Predict outcome/feature","x":-420,"y":-160,"width":250,"height":180},
+		{"id":"7254b8d38793ca7c","x":-600,"y":580,"width":250,"height":240,"type":"text","text":"Classification Examples\n- Decision Trees\n- Random Forest\n- K-nearest neighbor\n- Logistic Regression (binary classification)\n- Neural Networks"},
+		{"id":"e7e8afdc324abb1f","x":-255,"y":580,"width":250,"height":200,"type":"text","text":"Regression Examples\n- Linear regression"},
+		{"id":"7272ca0b3adaf36e","x":90,"y":580,"width":250,"height":200,"type":"text","text":"Clustering Examples\n- K-means"},
+		{"id":"72c363410b7ef2f5","x":480,"y":580,"width":250,"height":200,"type":"text","text":"Decision Making Examples\n- Q learning\n- R learning\n- TD learning"}
+	],
+	"edges":[
+		{"id":"04956db2f674680a","fromNode":"72263a10cb155ff3","fromSide":"bottom","toNode":"3b76fe4dc8e4e42b","toSide":"top"},
+		{"id":"56b5d861c5b1866c","fromNode":"72263a10cb155ff3","fromSide":"bottom","toNode":"13b5cf9a234f3976","toSide":"top"},
+		{"id":"6a1b0c4a38438e72","fromNode":"63cd1df76d6588bc","fromSide":"bottom","toNode":"72263a10cb155ff3","toSide":"top"},
+		{"id":"aef31fc3a9358157","fromNode":"63cd1df76d6588bc","fromSide":"bottom","toNode":"12f7554093cdc19a","toSide":"top"},
+		{"id":"384ff8ac9ca4a2dc","fromNode":"63cd1df76d6588bc","fromSide":"bottom","toNode":"95816217b2be2d37","toSide":"top"},
+		{"id":"29da3927b4954772","fromNode":"12f7554093cdc19a","fromSide":"bottom","toNode":"1486fc48f35a68bf","toSide":"top"},
+		{"id":"1fa585e8f74c4748","fromNode":"95816217b2be2d37","fromSide":"bottom","toNode":"b6d1c2d30f10b187","toSide":"top"},
+		{"id":"d7773520294a6cfe","fromNode":"3b76fe4dc8e4e42b","fromSide":"bottom","toNode":"7254b8d38793ca7c","toSide":"top"},
+		{"id":"3803f8c5be8bf77e","fromNode":"13b5cf9a234f3976","fromSide":"bottom","toNode":"e7e8afdc324abb1f","toSide":"top"},
+		{"id":"5654c28320eac2db","fromNode":"1486fc48f35a68bf","fromSide":"bottom","toNode":"7272ca0b3adaf36e","toSide":"top"},
+		{"id":"8e1cafa9107a9f29","fromNode":"b6d1c2d30f10b187","fromSide":"bottom","toNode":"72c363410b7ef2f5","toSide":"top"}
+	]
+}
