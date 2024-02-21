@@ -49,10 +49,10 @@
 | Boosting | Train additive models in series where each predicts the residual from previous model | [[Module 7 - KNN, Decision Trees, and Ensembles#Trees to Forests]] |
 
 
-| Method | Notes | Parametric | Normalization Necessary? | Example used in Class |
-| ---- | ---- | ---- | ---- | ---- |
-| Logistic Regression |  | Yes | Yes |  |
-| Decision Tree | Works well when there are less features, but the features tell a lot about the final label | No | No | Churn |
-| Neural Network |  |  |  |  |
-| KNN |  | No | Yes |  |
-|  |  |  |  |  |
+| Method | Notes | Learning Type (supervised/reinforcement/ect) | Parametric | Normalization Necessary? | Example used in Class |
+| ---- | ---- | ---- | ---- | ---- | ---- |
+| Logistic Regression |  |  | Yes | Yes |  |
+| Decision Tree | Works well when there are less features, but the features tell a lot about the final label |  | No | No | Churn |
+| Neural Network |  |  |  |  |  |
+| KNN |  |  | No | Yes |  |
+|  |  |  |  |  |  |
