@@ -1,3 +1,9 @@
+# 2/20/2024
+Coding practice question:
+![[Pasted image 20240220175307.png]]
+![[Pasted image 20240220175510.png]]
+![[Pasted image 20240220175734.png]]
+
 # 2/13/2024
 
 https://colab.research.google.com/drive/15Kb6guhwAlxIDoTqzyugzPB-hms9C78r?usp=sharing

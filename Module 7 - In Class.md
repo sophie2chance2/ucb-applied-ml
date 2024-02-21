@@ -1,3 +1,7 @@
+https://docs.google.com/presentation/d/1yvO1jiPyUXH_YCvuOGDIUvbnVNj5-c76uoqUwDnsO8w/edit#slide=id.g253ebd6bb5f_0_28
+
+https://colab.research.google.com/drive/1ybzGbGbTwKseMriyJ5DL4Z9iK8UdlOev?usp=sharing#scrollTo=CDDtNYMCO8Yc
+
 Ensembles - If you take the average of all the guesses, you will get the correct answer
 - Majority vote:  everyone votes and majority wins
 	- ![[Pasted image 20240220161441.png]]
