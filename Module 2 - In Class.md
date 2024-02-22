@@ -45,4 +45,3 @@ https://colab.research.google.com/drive/10umkNtjwgsrTuhX_Lk9YU0JuecPLCb1b?usp=sh
 	- Just call the models
 	- In a small company a differentiator could be the model if you build it from scratch. If you are a big company, cost is more of the factor.
 - Tech Stack ![](<photos/Pasted image 20240116175815.png>)
-- 

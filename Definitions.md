@@ -64,3 +64,4 @@
 |  |  |  |  |  |  |
 
 # Supervised Learning
+![photos/Pasted image 20240109170956.png]
