@@ -7,7 +7,7 @@
 		{"id":"1486fc48f35a68bf","type":"text","text":"Clustering\n![[Pasted image 20240221151947.png]]","x":90,"y":140,"width":250,"height":280},
 		{"id":"b6d1c2d30f10b187","type":"text","text":"Decision Making\n![[Pasted image 20240221152004.png]]","x":480,"y":140,"width":250,"height":280},
 		{"id":"72263a10cb155ff3","type":"text","text":"Supervised Learning\n- Labeled Data\n- Direct feedback\n- Predict outcome/feature","x":-420,"y":-160,"width":250,"height":180},
-		{"id":"7254b8d38793ca7c","type":"text","text":"Classification Examples\n- Decision Trees\n- Random Forest\n- K-nearest neighbor\n- Logistic Regression (binary classification)\n- Neural Networks","x":-600,"y":580,"width":250,"height":240},
+		{"id":"7254b8d38793ca7c","type":"text","text":"Classification Examples\n- [[Decision Trees]]\n- Random Forest\n- K-nearest neighbor\n- Logistic Regression (binary classification)\n- Neural Networks","x":-600,"y":580,"width":250,"height":240},
 		{"id":"e7e8afdc324abb1f","type":"text","text":"Regression Examples\n- Linear regression","x":-255,"y":580,"width":250,"height":200},
 		{"id":"7272ca0b3adaf36e","type":"text","text":"Clustering Examples\n- K-means","x":90,"y":580,"width":250,"height":200},
 		{"id":"72c363410b7ef2f5","type":"text","text":"Decision Making Examples\n- Q learning\n- R learning\n- TD learning","x":480,"y":580,"width":250,"height":200},
