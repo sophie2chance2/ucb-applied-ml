@@ -5,10 +5,10 @@
 https://colab.research.google.com/drive/10umkNtjwgsrTuhX_Lk9YU0JuecPLCb1b?usp=sharing#scrollTo=Fr9MDsg5iedT
 
 - Need to make sure you are finding the global min, not the local min
-- ![[Pasted image 20240116162254.png]]
+- ![](<photos/Pasted image 20240116162254.png>)
 - Need to jump up pretty far to run down to find the true bottom. 
 - Deep learning makes it easier, more stretched out
-- ![[Pasted image 20240116162551.png]]
+- ![](<photos/Pasted image 20240116162551.png>)
 	- Most cutting edge: there can be multiple global minima 
 - Measurement
 - How big steps are
@@ -34,8 +34,8 @@ https://colab.research.google.com/drive/10umkNtjwgsrTuhX_Lk9YU0JuecPLCb1b?usp=sh
 	- Quality
 	- Privacy & Security
 	- Bias
-- ![[Pasted image 20240116174752.png]]
-- ![[Pasted image 20240116174901.png]]
+- ![](<photos/Pasted image 20240116174752.png>)
+- ![](<photos/Pasted image 20240116174901.png>)
 - Uses a second LLM to look for un-secure prompts
 	- External model
 - Orchestration -> is a set of models
@@ -44,5 +44,5 @@ https://colab.research.google.com/drive/10umkNtjwgsrTuhX_Lk9YU0JuecPLCb1b?usp=sh
 	- Text is the beginning, next is text, video, etc.
 	- Just call the models
 	- In a small company a differentiator could be the model if you build it from scratch. If you are a big company, cost is more of the factor.
-- Tech Stack ![[Pasted image 20240116175815.png]]
+- Tech Stack ![](<photos/Pasted image 20240116175815.png>)
 - 
