@@ -2,16 +2,16 @@
 	"nodes":[
 		{"id":"12f7554093cdc19a","type":"text","text":"Unsupervised Learning\n- No Labels\n- No feedback\n- Find hidden structure in data","x":90,"y":-160,"width":250,"height":180},
 		{"id":"95816217b2be2d37","type":"text","text":"Reinforcement Learning\n- Decision Process\n- Reward system\n- Learn series of actions","x":480,"y":-160,"width":250,"height":180},
-		{"id":"63cd1df76d6588bc","type":"text","text":"Machine Learning","x":90,"y":-360,"width":250,"height":60},
 		{"id":"3b76fe4dc8e4e42b","type":"text","text":"Classification\n![[Pasted image 20240221151855.png]]","x":-600,"y":140,"width":250,"height":280},
 		{"id":"13b5cf9a234f3976","type":"text","text":"Regression\n![[Pasted image 20240221151925.png]]","x":-255,"y":140,"width":250,"height":280},
 		{"id":"1486fc48f35a68bf","type":"text","text":"Clustering\n![[Pasted image 20240221151947.png]]","x":90,"y":140,"width":250,"height":280},
 		{"id":"b6d1c2d30f10b187","type":"text","text":"Decision Making\n![[Pasted image 20240221152004.png]]","x":480,"y":140,"width":250,"height":280},
 		{"id":"72263a10cb155ff3","type":"text","text":"Supervised Learning\n- Labeled Data\n- Direct feedback\n- Predict outcome/feature","x":-420,"y":-160,"width":250,"height":180},
-		{"id":"7254b8d38793ca7c","x":-600,"y":580,"width":250,"height":240,"type":"text","text":"Classification Examples\n- Decision Trees\n- Random Forest\n- K-nearest neighbor\n- Logistic Regression (binary classification)\n- Neural Networks"},
-		{"id":"e7e8afdc324abb1f","x":-255,"y":580,"width":250,"height":200,"type":"text","text":"Regression Examples\n- Linear regression"},
-		{"id":"7272ca0b3adaf36e","x":90,"y":580,"width":250,"height":200,"type":"text","text":"Clustering Examples\n- K-means"},
-		{"id":"72c363410b7ef2f5","x":480,"y":580,"width":250,"height":200,"type":"text","text":"Decision Making Examples\n- Q learning\n- R learning\n- TD learning"}
+		{"id":"7254b8d38793ca7c","type":"text","text":"Classification Examples\n- Decision Trees\n- Random Forest\n- K-nearest neighbor\n- Logistic Regression (binary classification)\n- Neural Networks","x":-600,"y":580,"width":250,"height":240},
+		{"id":"e7e8afdc324abb1f","type":"text","text":"Regression Examples\n- Linear regression","x":-255,"y":580,"width":250,"height":200},
+		{"id":"7272ca0b3adaf36e","type":"text","text":"Clustering Examples\n- K-means","x":90,"y":580,"width":250,"height":200},
+		{"id":"72c363410b7ef2f5","type":"text","text":"Decision Making Examples\n- Q learning\n- R learning\n- TD learning","x":480,"y":580,"width":250,"height":200},
+		{"id":"63cd1df76d6588bc","type":"text","text":"Machine Learning","x":-35,"y":-380,"width":250,"height":60}
 	],
 	"edges":[
 		{"id":"04956db2f674680a","fromNode":"72263a10cb155ff3","fromSide":"bottom","toNode":"3b76fe4dc8e4e42b","toSide":"top"},
