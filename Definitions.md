@@ -53,6 +53,7 @@
 | Target | Synonymous with outcome, output, response variable, dependent variable, label, and ground truth |  |
 | Loss Function | ie. error function, loss measured for a single datapoint |  |
 | Cost Function | Loss over the entire dataset |  |
+| instance based learning | Memorize the training dataset |  |
 
 
 | Method | Notes | Learning Type (supervised/reinforcement/ect) | Parametric | Normalization Necessary? | Example used in Class |
