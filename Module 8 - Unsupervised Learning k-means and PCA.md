@@ -82,4 +82,21 @@
 - With k-means k = 64  ![](Pasted%20image%2020240225144122.png)
 	- With each of the colors mapped, this is the new image ![](Pasted%20image%2020240225144311.png)
 		- Huge difference in size
-- 
+- K-means with k = 2 ![](Pasted%20image%2020240225144452.png)
+	- ![](Pasted%20image%2020240225153011.png)
+- Vector Quantization
+	- Signal processing / density estimation
+	- Lossy data comparison
+	- Codebook maps items to a smaller set of IDs
+	- K-means is one way to build the codebook
+
+### The Normal (Gaussian) Distribution
+- We can make shaped elipses instead of circles using GMM
+- ![](Pasted%20image%2020240225153627.png)
+- Normal Distribution Properties
+	- Central Limit Theorem: The sum of the samples from any random variable tends to look normally distributed
+		- ![](Pasted%20image%2020240225154043.png)
+	- Sums and differences of Normal distributions are also normal
+	- Negative log of the probability density function (PDF) looks like weighted euclidean distance
+		- ![](Pasted%20image%2020240225153957.png)
+	- 
