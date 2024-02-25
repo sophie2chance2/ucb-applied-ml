@@ -12,8 +12,9 @@
 		{"id":"7272ca0b3adaf36e","type":"text","text":"Clustering Examples\n- K-means","x":90,"y":580,"width":250,"height":260},
 		{"id":"72c363410b7ef2f5","type":"text","text":"Decision Making Examples\n- Q learning\n- R learning\n- TD learning","x":480,"y":580,"width":250,"height":260},
 		{"id":"63cd1df76d6588bc","type":"text","text":"Machine Learning","x":-35,"y":-380,"width":250,"height":60},
-		{"id":"410cefb6877db756","x":-880,"y":-260,"width":380,"height":280,"type":"text","text":"**Steps to Train Supervised ML model**\n1. Selecting Features and collecting labeled training examples\n2. Choosing a performance metric\n3. Choosing a classifier and optimization algorithm\n4. Evaluating performance of the model\n5. Tuning the algorithm"},
-		{"id":"bc5dbccd54974c99","x":-960,"y":940,"width":250,"height":200,"type":"text","text":"Non Parametric Models\n- Decision Tree\n- Random Forest\n- KNN (instance based learning)"}
+		{"id":"410cefb6877db756","type":"text","text":"**Steps to Train Supervised ML model**\n1. Selecting Features and collecting labeled training examples\n2. Choosing a performance metric\n3. Choosing a classifier and optimization algorithm\n4. Evaluating performance of the model\n5. Tuning the algorithm","x":-880,"y":-260,"width":380,"height":280},
+		{"id":"bc5dbccd54974c99","type":"text","text":"Non Parametric Models\n- Decision Tree\n- Random Forest\n- KNN (instance based learning)","x":-960,"y":940,"width":250,"height":200},
+		{"id":"a13aee6d1dd88dcc","type":"file","file":"DS_207/photos/Pasted image 20240224191117.png","x":-1759,"y":180,"width":1049,"height":568}
 	],
 	"edges":[
 		{"id":"04956db2f674680a","fromNode":"72263a10cb155ff3","fromSide":"bottom","toNode":"3b76fe4dc8e4e42b","toSide":"top"},
