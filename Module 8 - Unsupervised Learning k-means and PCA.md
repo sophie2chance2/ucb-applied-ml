@@ -99,4 +99,40 @@
 	- Sums and differences of Normal distributions are also normal
 	- Negative log of the probability density function (PDF) looks like weighted euclidean distance
 		- ![](Pasted%20image%2020240225153957.png)
-	- 
+	- ![](Pasted%20image%2020240225154635.png)
+	- ![](Pasted%20image%2020240225155022.png)
+### Normal Parameter Estimation
+- Maximum Likelihood
+	- Assuming our model for is correct, 
+		- Choose parameters that maximize the probability (likelihood) of the data
+		- Maximum Likelihood Estimates are the best we can do given infinite data
+
+### Gaussian Mixture Models (GMMs)
+- Not all data is normally distributed
+- You can use a mixture of normals, using multiple Guassians 
+- ![](Pasted%20image%2020240225160920.png)
+- The probability of each observation is a weighted combination of Gaussians
+	- Component weights are p multinomial
+	- Can approximate any distribution... with enough Gaussians
+- GMM Generative Process
+	- ![](Pasted%20image%2020240225161329.png)
+- MLE for GMMs
+	- Need to estimate means, co-variances and mixture weights
+	- Mixture weights are hidden variables
+	- No straightforward way to get the argmax over parameters
+
+### GMM Parameter Estimation
+- Hidden variables
+	- Suppose we had a cluster assignment for each datapoint
+	- Now we can get the MLE for the GMM parameters
+	- Given Gaussian parameters, we can generate cluster assignments
+	- Sounds like K-means algorithm
+- Expectation Maximization (EM)
+	- Hard assignment:
+		- Assign a single cluster for each x_i
+		- Similar to k-means
+		- convergence guarantees don't hold
+	- Soft assignment:
+		- x_i gets a partial assignment to each cluster j
+		- Also called "fractional counts"
+		- Parameters converge to local optimum
