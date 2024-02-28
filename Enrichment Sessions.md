@@ -1,3 +1,5 @@
+# 2/27/2024
+![](Pasted%20image%2020240227175242.png)
 # 2/20/2024
 Coding practice question:
 ![[Pasted image 20240220175307.png]]
