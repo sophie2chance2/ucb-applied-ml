@@ -26,3 +26,4 @@
 		- ![](Pasted%20image%2020240304203958.png)
 	- ![](Pasted%20image%2020240304204156.png)
 # Contextual Encodings
+- Dot product will always be 0
